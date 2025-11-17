@@ -8,7 +8,7 @@ readme = "README.md"
 categories = ["ctf", "event", "banner"]
 
 [content]
-type = "event"
+type = "banner"
 
-[event]
-file_path = "banner.md"
+[banner]
+file_path = "src/content"

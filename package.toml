@@ -1,7 +1,7 @@
 [package]
 name = "sewercide-ctf-banner"
 description = "Challenge briefing banner for Sewercide CTF exercise"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Andris <andris@postalsys.com>"]
 license = "MIT"
 readme = "README.md"

@@ -1,14 +1,74 @@
 <h1>Sewercide CTF Challenge</h1>
-<p>Welcome to the <b>Sewercide Plumbing</b> network.</p>
-<p>Your task is to find and retrieve the hidden flag from the target server.</p>
-<ul>
-  <li><b>Attacker machine:</b> Kali Linux 2025.2</li>
-  <li><b>Target:</b> A web server running somewhere on the network</li>
-  <li><b>Objective:</b> Gain access, escalate privileges, and capture the flag file</li>
-  <li><b>Flag format:</b> <code>flag{something}</code></li>
-</ul>
-<p>Good luck and happy hacking!</p>
 
-<p>Exercise name: {{ exerciseName }}</p>
-<p>Deployment name: {{ deploymentName }}</p>
-<p>Username: {{ username }}</p>
+<div style="background-color: #1e1e1e; border-left: 4px solid #00ff00; padding: 15px; margin: 15px 0">
+  <h2 style="color: #00ff00; margin-top: 0">Mission Briefing</h2>
+  <p>
+    Welcome to <strong>Sewercide Plumbing Co.</strong> - a small plumbing business that recently decided to establish their web presence. Intelligence suggests
+    they're running a development version of their new website while still working out the kinks. During this testing phase, they may have accidentally exposed
+    sensitive information. Your mission: infiltrate their development infrastructure and retrieve the evidence.
+  </p>
+</div>
+
+<h2>Objective</h2>
+<p>
+  Locate and exfiltrate the hidden flag file from the <code>/etc</code> directory on the target server. The flag contains sensitive information that will expose
+  their security practices.
+</p>
+
+<h2>Your Environment</h2>
+<ul>
+  <li><strong>Attack Platform:</strong> Kali Linux 2025.2 (IP: <code>10.1.1.10</code>)</li>
+  <li><strong>Available Tools:</strong> Full penetration testing suite pre-installed</li>
+  <li><strong>Network Access:</strong> Direct connectivity to target network segment</li>
+</ul>
+
+<h2>Target Information</h2>
+<ul>
+  <li><strong>Target Type:</strong> Development web server (location and port unknown - full reconnaissance required)</li>
+  <li><strong>Network Range:</strong> <code>10.1.1.0/24</code></li>
+  <li><strong>Your Task:</strong> Identify which host in the network range is running the target services</li>
+  <li><strong>Application:</strong> Sewercide Plumbing website (development build)</li>
+  <li><strong>Flag Location:</strong> <code>/etc/</code> directory on compromised server</li>
+  <li><strong>Flag Format:</strong> <code>flag{...}</code></li>
+</ul>
+
+<div style="background-color: #2a2a2a; border: 1px solid #444; padding: 12px; margin: 15px 0">
+  <h3 style="margin-top: 0">Intelligence Notes</h3>
+  <ul style="margin-bottom: 0">
+    <li>
+      <strong>Non-Standard Configuration:</strong> The web server is NOT running on standard port 80 - development servers often use non-standard ports. You'll
+      need to perform reconnaissance to discover active services
+    </li>
+    <li><strong>Development Features:</strong> Development servers often have debug features, test endpoints, or misconfigured security controls</li>
+    <li><strong>Web Application:</strong> The site includes a pricing calculator form - web forms are often prime targets for exploitation</li>
+    <li>
+      <strong>Multiple Services:</strong> The target may be running multiple services. Standard services like SSH are common, but what else is exposed? Use your
+      scanning tools to enumerate
+    </li>
+  </ul>
+</div>
+
+<div style="background-color: #2a2a2a; border: 1px solid #444; padding: 12px; margin: 15px 0">
+  <h3 style="margin-top: 0">Pro Tips</h3>
+  <ul style="margin-bottom: 0">
+    <li>
+      <strong>Network Discovery:</strong> Start by scanning the network range <code>10.1.1.0/24</code> to identify active hosts. Use <code>nmap</code> for host
+      discovery to find live systems
+    </li>
+    <li><strong>Web Server Discovery:</strong> After identifying the web server and its port, browse the website to understand the application structure</li>
+    <li>Explore all available pages and functionality - developers sometimes leave interesting features exposed</li>
+    <li>Pay special attention to how the web application processes user input</li>
+    <li>If you find credentials or keys, consider how they might be used for access escalation</li>
+  </ul>
+</div>
+
+<h2>Exercise Details</h2>
+<ul>
+  <li><strong>Exercise:</strong> {{ exerciseName }}</li>
+  <li><strong>Deployment:</strong> {{ deploymentName }}</li>
+  <li><strong>Participant:</strong> {{ username }}</li>
+</ul>
+
+<hr />
+
+<p style="text-align: center; color: #00ff00"><strong>Good luck, and remember: stay in scope, document your findings, and happy hacking!</strong></p>

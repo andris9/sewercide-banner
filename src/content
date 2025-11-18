@@ -1,6 +1,6 @@
 <h1>Sewercide CTF Challenge</h1>
 
-<div style="background-color: #1e1e1e; border-left: 4px solid #00ff00; padding: 15px; margin: 15px 0">
+<div style="background-color: #1e1e1e; border-left: 4px solid #00ff00; padding: 15px; margin: 15px 0; color: #e0e0e0">
   <h2 style="color: #00ff00; margin-top: 0">Mission Briefing</h2>
   <p>
     Welcome to <strong>Sewercide Plumbing Co.</strong> - a small plumbing business that recently decided to establish their web presence. Intelligence suggests
@@ -32,8 +32,8 @@
   <li><strong>Flag Format:</strong> <code>flag{...}</code></li>
 </ul>
 
-<div style="background-color: #2a2a2a; border: 1px solid #444; padding: 12px; margin: 15px 0">
-  <h3 style="margin-top: 0">Intelligence Notes</h3>
+<div style="background-color: #2a2a2a; border: 1px solid #444; padding: 12px; margin: 15px 0; color: #e0e0e0">
+  <h3 style="margin-top: 0; color: #00ff00">Intelligence Notes</h3>
   <ul style="margin-bottom: 0">
     <li>
       <strong>Non-Standard Configuration:</strong> The web server is NOT running on standard port 80 - development servers often use non-standard ports. You'll
@@ -48,8 +48,8 @@
   </ul>
 </div>
 
-<div style="background-color: #2a2a2a; border: 1px solid #444; padding: 12px; margin: 15px 0">
-  <h3 style="margin-top: 0">Pro Tips</h3>
+<div style="background-color: #2a2a2a; border: 1px solid #444; padding: 12px; margin: 15px 0; color: #e0e0e0">
+  <h3 style="margin-top: 0; color: #00ff00">Pro Tips</h3>
   <ul style="margin-bottom: 0">
     <li>
       <strong>Network Discovery:</strong> Start by scanning the network range <code>10.1.1.0/24</code> to identify active hosts. Use <code>nmap</code> for host

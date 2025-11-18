@@ -71,4 +71,4 @@
 
 <hr />
 
-<p style="text-align: center; color: #00ff00"><strong>Good luck, and remember: stay in scope, document your findings, and happy hacking!</strong></p>
+<p style="text-align: center; color: #00ff00; background-color: #1e1e1e; padding: 10px; border-radius: 4px"><strong>Good luck, and remember: stay in scope, document your findings, and happy hacking!</strong></p>

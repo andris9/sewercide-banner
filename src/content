@@ -2,9 +2,13 @@
 <p>Welcome to the <b>Sewercide Plumbing</b> network.</p>
 <p>Your task is to find and retrieve the hidden flag from the target server.</p>
 <ul>
-<li><b>Attacker machine:</b> Kali Linux 2025.2</li>
-<li><b>Target:</b> A web server running somewhere on the network</li>
-<li><b>Objective:</b> Gain access, escalate privileges, and capture the flag file</li>
-<li><b>Flag format:</b> <code>flag{something}</code></li>
+  <li><b>Attacker machine:</b> Kali Linux 2025.2</li>
+  <li><b>Target:</b> A web server running somewhere on the network</li>
+  <li><b>Objective:</b> Gain access, escalate privileges, and capture the flag file</li>
+  <li><b>Flag format:</b> <code>flag{something}</code></li>
 </ul>
 <p>Good luck and happy hacking!</p>
+
+<p>Exercise name: {{ exerciseName }}</p>
+<p>Deployment name: {{ deploymentName }}</p>
+<p>Username: {{ username }}</p>

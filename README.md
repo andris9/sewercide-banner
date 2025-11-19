@@ -1,5 +1,7 @@
 # Sewercide CTF Challenge Banner - Reference Deputy Banner Package
 
+**GitHub Repository:** https://github.com/andris9/sewercide-banner
+
 ## Purpose
 
 This Deputy banner package serves as a **reference example** for creating challenge briefing banners for Open Cyber Range exercises. It demonstrates how to structure participant-facing content that provides context, objectives, and guidance without revealing solutions.

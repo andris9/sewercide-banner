@@ -1,6 +1,6 @@
 # Sewercide CTF Challenge Banner - Reference Deputy Banner Package
 
-**GitHub Repository:** https://github.com/andris9/sewercide-banner
+**GitHub Repository:** [github.com/andris9/sewercide-banner](https://github.com/andris9/sewercide-banner)
 
 ## Purpose
 

@@ -1,30 +1,3 @@
-<!--
-  Sewercide CTF Challenge - Banner Content
-
-  This HTML file is displayed to participants when they start the OCR exercise.
-  It provides challenge briefing, objectives, and environment information.
-
-  TEMPLATE VARIABLES:
-  OCR automatically replaces these placeholders with actual values:
-  - {{ exerciseName }} - Exercise name from SDL file
-  - {{ deploymentName }} - Deployment instance identifier
-  - {{ username }} - Participant's username
-
-  STYLING:
-  Inline CSS is used since this renders in OCR's platform UI.
-  Dark theme colors (#1e1e1e background, #00ff00 green accents) match
-  typical CTF/hacking aesthetics.
-
-  CONTENT STRUCTURE:
-  1. Mission briefing - Scenario and context
-  2. Objective - What participants need to accomplish
-  3. Environment info - Attack platform details
-  4. Target info - What they're attacking
-  5. Intelligence notes - Technical hints without spoilers
-  6. Pro tips - Methodology guidance
-  7. Exercise details - Personalized info with template variables
--->
-
 <h1>Sewercide CTF Challenge</h1>
 
 <div style="background-color: #1e1e1e; border-left: 4px solid #00ff00; padding: 15px; margin: 15px 0; color: #e0e0e0">
@@ -98,4 +71,6 @@
 
 <hr />
 
-<p style="text-align: center; color: #00ff00; background-color: #1e1e1e; padding: 10px; border-radius: 4px"><strong>Good luck, and remember: stay in scope, document your findings, and happy hacking!</strong></p>
+<p style="text-align: center; color: #00ff00; background-color: #1e1e1e; padding: 10px; border-radius: 4px">
+  <strong>Good luck, and remember: stay in scope, document your findings, and happy hacking!</strong>
+</p>

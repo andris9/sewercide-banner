@@ -1,3 +1,31 @@
+# Deputy Banner Package Configuration for Sewercide CTF Challenge
+#
+# This file defines a Deputy "banner" package that displays challenge briefing
+# to participants when they start an OCR exercise. Banner packages are separate
+# from the main feature package to allow independent updates to briefing content.
+#
+# PACKAGE TYPE: banner
+# Banner packages display HTML content to participants in the OCR platform UI.
+#
+# HOW THIS WORKS:
+# 1. Banner content is stored in src/content (HTML with template variables)
+# 2. OCR renders the banner when participants access the exercise
+# 3. Template variables like {{exerciseName}} are replaced with actual values using nunjucks
+# 4. Banner is displayed before participants access their VMs
+#
+# TEMPLATE VARIABLES AVAILABLE:
+# - {{exerciseName}} - Name of the exercise from SDL
+# - {{deploymentName}} - Deployment instance name
+# - {{username}} - Participant username
+#
+# PUBLISHING:
+# To publish this package to Deputy registry:
+# 1. Update version in this file
+# 2. Run: deputy publish
+#
+
+# PACKAGE METADATA
+# Standard Deputy package information displayed in the registry
 [package]
 name = "sewercide-banner"
 description = "Challenge briefing banner for Sewercide CTF exercise"
@@ -5,10 +33,16 @@ version = "0.0.5"
 authors = ["Andris <andris@postalsys.com>"]
 license = "MIT"
 readme = "README.md"
-categories = []
+categories = ["banner"]
 
+# CONTENT SECTION
+# Defines this as a banner-type package
+# Banner packages display HTML content to participants in OCR UI
 [content]
 type = "banner"
 
+# BANNER SECTION
+# Specifies the path to the HTML content file
+# The file can contain HTML with optional template variables
 [banner]
-file_path = "src/content"
+file_path = "src/content" # Path to HTML content file (relative to package.toml)
